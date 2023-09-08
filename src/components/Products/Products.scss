@@ -1,0 +1,157 @@
+.nav,
+.footer,
+.products,
+.text {
+  display: flex;
+}
+
+.products {
+  flex-direction: column;
+  overflow: hidden;
+  .text {
+    margin-left: 26px;
+    hr {
+      border: none;
+      margin-top: 16px;
+      width: 33px;
+      height: 4px;
+      background: #618967;
+      transform: rotate(90deg);
+    }
+    h2 {
+      height: 44px;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 44px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+  }
+  .card {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 37px;
+    background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
+    border-radius: 10px;
+    width: 325px;
+    height: 385px;
+    transition: 0.5s;
+    
+    &:hover {
+      box-shadow: 0px 30px 45px 0px rgba(43, 40, 40, 1);
+      transform: translateY(4px);
+    }
+
+    > img {
+      margin-right: 16px;
+      width: 325px;
+      height: 227px;
+      border-radius: 10px 10px 0 0;
+    }
+    .count {
+      position: absolute;
+      display: grid;
+      place-items: center;
+      top: -10px;
+      right: -10px;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+    }
+
+    .card-info {
+      padding: 14px 16px 18px 20px;
+      .nav,
+      .footer {
+        justify-content: space-between;
+
+        .name {
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 27px;
+        }
+
+        .weight {
+          margin-top: 10px;
+          font-size: 12px;
+          line-height: 14px;
+          color: #cfcfcf;
+        }
+      }
+
+      .description {
+        margin-top: 5px;
+        font-size: 13px;
+        line-height: 17px;
+        color: #cfcfcf;
+      }
+
+      .price,
+      .CounChangeButtons {
+        display: flex;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        align-items: center;
+      }
+
+      .CounChangeButtons {
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .countButton {
+        height: 44px;
+        width: 62px;
+        display: grid;
+        place-items: center;
+        font-size: 35px;
+        &:hover {
+          box-shadow: 0px 5px 10px 0px rgba(114, 163, 121, 0.7);
+        }
+      }
+
+      button {
+        width: 137px;
+        height: 44px;
+        border-radius: 10px;
+        border: none;
+
+        img {
+          margin-left: 15px;
+          width: 18.5px;
+          height: 15.41px;
+        }
+      }
+    }
+  }
+
+  .more {
+    margin: auto;
+    margin-top: 40px;
+    border: none;
+    cursor: pointer;
+    width: 720px;
+    height: 59px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    border-radius: 15px;
+  }
+}
+
+.products-hr {
+  margin: 48px 0 42px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+@media (max-width: 375px) {
+  .products .more {
+    width: 310px;
+    font-size: 19px;
+  }
+}

@@ -1,0 +1,72 @@
+.profile {
+
+  .left-profile {
+
+    form {
+      .input-elems {
+        width: 844px;
+        height: 697px;
+        background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
+        border-radius: 20px;
+        padding: 30px 40px 0 32px;
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      label {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        align-items: center;
+
+        >input, textarea {
+          margin-left: 95px;
+          width: 382px;
+          height: 60px;
+          background: #3d3938;
+          border: 1px solid #706f6f;
+          border-radius: 15px;
+          padding-left: 5px;
+  
+          &::-webkit-file-upload-button {
+            cursor: pointer;
+            margin: 15px 7px 0 15px;
+            width: 133px;
+            height: 30px;
+            background: #d9d9d9;
+            border: 0.6px solid #000000;
+          }
+        }
+      }
+
+      .first-input {
+        margin-top: 30px;
+      }
+    }
+
+    .save {
+      margin: auto;
+      margin-top: 32px;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      width: 432px;
+      height: 60px;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 38px;
+      letter-spacing: 0.03em;
+      display: block;
+
+      &:disabled {
+        cursor: default;
+      }
+    }
+  }
+}
